@@ -1,0 +1,65 @@
+/* common css */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box ;
+    font-family: arial;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* common css ends*/
+/* NAVBAR */
+nav{
+    padding:15px 0;
+    text-align: center;
+    background-image: linear-gradient(to right,red,yellow)
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 25px;
+    font-size: 20px;
+    
+}
+nav ul li::before {
+    content:'';
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom:10px;
+    border-radius: 10px;
+    transition: 0.35s;
+}
+nav ul li:hover:before {
+    width: 50%;
+}
+
+nav ul li::after {
+    content:'';
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    border-radius: 10px;
+    transition: 0.35s;
+}
+nav ul li:hover:after {
+    width: 50%;
+}
+nav ul a {
+    color: white;
+    padding: 15px 10px;
+    display: block;
+  
+}
+nav ul li:hover a {
+    border-bottom: 2px solid white;
+}
